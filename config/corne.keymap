@@ -82,10 +82,10 @@
 
         sym {
             bindings = <
-&kp  &kp       &kp LBKT   &kp RBKT  &kp       &kp          &kp  &kp        &kp       &kp        &kp       &kp
-&kp  &kp PLUS  &kp MINUS  &kp LPAR  &kp RPAR  &kp EQUAL    &kp  &kp EQUAL  &kp PLUS  &kp MINUS  &kp EXCL  &kp
-&kp  &kp       &kp        &kp LBRC  &kp RBRC  &kp          &kp  &kp        &kp LT    &kp GT     &kp       &kp
-                          &kp       &kp       &kp          &kp  &kp        &kp
+&kp  &kp     &kp LBKT  &kp RBKT  &kp       &kp        &kp  &kp        &kp       &kp        &kp       &kp
+&kp  &trans  &kp DQT   &kp LPAR  &kp RPAR  &kp SQT    &kp  &kp EQUAL  &kp PLUS  &kp MINUS  &kp EXCL  &kp
+&kp  &kp     &kp       &kp LBRC  &kp RBRC  &kp        &kp  &kp        &kp LT    &kp GT     &kp       &kp
+                       &kp       &kp       &kp        &kp  &kp        &kp
             >;
         };
 
