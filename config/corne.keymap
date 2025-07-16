@@ -67,8 +67,8 @@
             bindings = <
 &kp ESC    &kp Q                    &kp W       &kp E       &kp R        &kp T          &kp Y        &kp U        &kp I       &kp O       &kp P                            &kp BSPC
 &kp LSHFT  &hm LA(LC(LG(LCTRL))) A  &hm LGUI S  &hm LALT D  &hm LCTRL F  &kp G          &kp H        &hm LCTRL J  &hm LALT K  &hm LGUI L  &hm LA(LC(LG(LCTRL))) SEMICOLON  &kp APOS
-&kp LCTRL  &kp Z                    &kp X       &kp C       &kp V        &kp B          &kp N        &kp M        &kp COMMA   &kp PERIOD  &kp FSLH                         &kp LCTRL
-                                                &trans      &trans       &lt 1 SPACE    &lt 2 ENTER  &trans       &trans
+&kp LCTRL  &kp Z                    &kp X       &kp C       &kp V        &kp B          &kp N        &kp M        &kp COMMA   &kp PERIOD  &kp FSLH                         &kp LA(LC(LG(LCTRL)))
+                                                &mo 4       &mo 3        &lt 1 SPACE    &lt 2 ENTER  &trans       &trans
             >;
         };
 
