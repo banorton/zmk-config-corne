@@ -66,10 +66,10 @@
 
         base {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R      &kp T             &kp Y           &kp U      &kp I      &kp O       &kp P     &kp BSPC
-&kp LSHFT  &kp A  &kp S  &kp D  &kp F      &kp G             &kp H           &kp J      &kp K      &kp L       &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp V      &kp B             &kp N           &kp M      &kp COMMA  &kp PERIOD  &kp FSLH  &kp LA(LC(LG(LCTRL)))
-                         &mo 3  &lt 1 ESC  &hm LGUI SPACE    &hm LALT ENTER  &lt 2 TAB  &tog 4
+&trans     &kp Q         &kp W       &kp E       &kp R        &kp T          &kp Y        &kp U        &kp I       &kp O       &kp P            &kp BSPC
+&kp ESC    &hm LSHIFT A  &hm LGUI S  &hm LALT D  &hm LCTRL F  &kp G          &kp H        &hm LCTRL J  &hm K LALT  &hm L LGUI  &hm LSHIFT SEMI  &kp APOS
+&kp LCTRL  &kp Z         &kp X       &kp C       &kp V        &kp B          &kp N        &kp M        &kp COMMA   &kp PERIOD  &kp FSLH         &trans
+                                     &trans      &lt 3 ESC    &lt 1 SPACE    &lt 2 ENTER  &kp TAB      &tog 4
             >;
         };
 
