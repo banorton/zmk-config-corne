@@ -57,7 +57,39 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        rsym {
+            bindings = <&mo 2>;
+            key-positions = <19 20>;
+        };
+
+        lsym {
+            bindings = <&mo 2>;
+            key-positions = <16 15>;
+        };
+
+        rnav {
+            bindings = <&mo 3>;
+            key-positions = <20 21>;
+        };
+
+        lnav {
+            bindings = <&mo 3>;
+            key-positions = <15 14>;
+        };
+
+        lesc {
+            bindings = <&kp ESC>;
+            key-positions = <16 14>;
+        };
+
+        ltab {
+            bindings = <&kp TAB>;
+            key-positions = <13 16>;
+        };
+    };
 
     //
 
@@ -66,10 +98,10 @@
 
         base {
             bindings = <
-&trans     &kp Q         &kp W       &kp E       &kp R        &kp T          &kp Y        &kp U        &kp I       &kp O       &kp P            &kp BSPC
-&kp ESC    &hm LSHIFT A  &hm LGUI S  &hm LALT D  &hm LCTRL F  &kp G          &kp H        &hm LCTRL J  &hm K LALT  &hm L LGUI  &hm LSHIFT SEMI  &kp APOS
-&kp LCTRL  &kp Z         &kp X       &kp C       &kp V        &kp B          &kp N        &kp M        &kp COMMA   &kp PERIOD  &kp FSLH         &trans
-                                     &trans      &lt 3 ESC    &lt 1 SPACE    &lt 2 ENTER  &kp TAB      &tog 4
+&trans  &kp Q                    &kp W       &kp E       &kp R        &kp T        &kp Y      &kp U          &kp I           &kp O            &kp P                       &trans
+&trans  &kp A                    &kp S       &kp D       &kp F        &kp G        &kp H      &kp J          &kp K           &kp L            &kp SEMI                    &trans
+&trans  &hm LS(LA(LG(LCTRL))) Z  &hm LGUI X  &hm LALT C  &hm LCTRL V  &kp B        &kp N      &hm LCTRL M    &hm LALT COMMA  &hm LGUI PERIOD  &hm LS(LA(LG(LCTRL))) FSLH  &trans
+                                             &trans      &kp TAB      &kp SPACE    &kp ENTER  &kp BACKSPACE  &tog 4
             >;
         };
 
