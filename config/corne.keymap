@@ -75,10 +75,10 @@
 
         num {
             bindings = <
-&trans  &trans  &trans              &trans                &trans              &trans    &trans  &trans              &trans             &trans            &trans  &trans
-&trans  &kp N1  &kp N2              &kp N3                &kp N4              &kp N5    &kp N6  &kp N7              &kp N8             &kp N9            &kp N0  &trans
-&trans  &trans  &hm LGUI KP_DIVIDE  &hm LALT KP_ASTERISK  &hm LCTRL KP_EQUAL  &trans    &trans  &hm LCTRL KP_EQUAL  &hm LALT KP_MINUS  &hm LGUI KP_PLUS  &trans  &trans
-                                    &trans                &trans              &trans    &trans  &trans              &trans
+&trans  &trans         &trans              &trans                &trans              &trans    &trans  &trans              &trans             &trans            &trans        &trans
+&trans  &hm LSHIFT N1  &kp N2              &kp N3                &kp N4              &kp N5    &kp N6  &kp N7              &kp N8             &kp N9            &hm LSHFT N0  &trans
+&trans  &trans         &hm LGUI KP_DIVIDE  &hm LALT KP_ASTERISK  &hm LCTRL KP_EQUAL  &trans    &trans  &hm LCTRL KP_EQUAL  &hm LALT KP_MINUS  &hm LGUI KP_PLUS  &trans        &trans
+                                           &trans                &trans              &trans    &trans  &trans              &trans
             >;
         };
 
