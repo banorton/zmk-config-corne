@@ -89,6 +89,11 @@
             bindings = <&kp TAB>;
             key-positions = <13 16>;
         };
+
+        renter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 21>;
+        };
     };
 
     //
@@ -100,35 +105,35 @@
             bindings = <
 &trans  &kp Q                    &kp W       &kp E       &kp R        &kp T          &kp Y          &kp U        &kp I           &kp O            &kp P                       &trans
 &trans  &hm LSHFT A              &kp S       &kp D       &kp F        &kp G          &kp H          &kp J        &kp K           &kp L            &hm LSHIFT SEMICOLON        &kp APOS
-&trans  &hm LS(LA(LG(LCTRL))) Z  &hm LGUI X  &hm LALT C  &hm LCTRL V  &kp B          &kp N          &hm LCTRL M  &hm LALT COMMA  &hm LGUI PERIOD  &hm LS(LA(LG(LCTRL))) FSLH  &trans
-                                             &trans      &kp TAB      &lt 1 SPACE    &kp BACKSPACE  &kp ENTER    &tog 4
+&trans  &hm LS(LA(LG(LCTRL))) Z  &hm LGUI X  &hm LALT C  &hm LCTRL V  &kp B          &kp N          &hm LCTRL M  &hm LALT COMMA  &hm LGUI PERIOD  &hm LS(LA(LG(LCTRL))) FSLH  &mo 4
+                                             &trans      &kp TAB      &lt 1 SPACE    &kp BACKSPACE  &kp ENTER    &trans
             >;
         };
 
         num {
             bindings = <
-&trans  &trans  &kp FSLH  &kp ASTRK  &trans  &trans    &trans  &trans     &kp MINUS  &kp PLUS  &trans  &trans
-&trans  &kp N1  &kp N2    &kp N3     &kp N4  &kp N5    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0  &kp EQUAL
-&trans  &trans  &trans    &trans     &trans  &trans    &trans  &kp EQUAL  &trans     &trans    &trans  &trans
-                          &trans     &trans  &trans    &trans  &trans     &trans
+&trans  &trans  &trans         &trans          &trans           &trans    &trans  &trans           &trans         &trans          &trans  &trans
+&trans  &kp N1  &kp N2         &kp N3          &kp N4           &kp N5    &kp N6  &kp N7           &kp N8         &kp N9          &kp N0  &trans
+&trans  &trans  &hm LGUI FSLH  &hm LALT ASTRK  &hm LCTRL EQUAL  &trans    &trans  &hm LCTRL EQUAL  &hm LALT PLUS  &hm LGUI MINUS  &trans  &trans
+                               &trans          &trans           &trans    &trans  &trans           &trans
             >;
         };
 
         sym {
             bindings = <
-&trans  &trans     &kp LBKT   &kp RBKT  &trans    &trans       &trans  &trans     &kp PIPE  &kp AMPS   &trans    &trans
-&trans  &kp SQT    &kp DQT    &kp LPAR  &kp RPAR  &kp TILDE    &trans  &kp EQUAL  &kp PLUS  &kp MINUS  &kp EXCL  &kp UNDER
-&trans  &kp UNDER  &kp GRAVE  &kp LBRC  &kp RBRC  &trans       &trans  &trans     &kp LT    &kp GT     &kp BSLH  &trans
-                              &trans    &trans    &trans       &trans  &trans     &trans
+&trans  &trans     &kp LBKT   &kp RBKT  &trans    &trans      &trans  &trans     &kp PIPE  &kp AMPS   &trans    &trans
+&trans  &kp LT     &kp GT     &kp LPAR  &kp RPAR  &kp AMPS    &trans  &kp EQUAL  &kp PLUS  &kp MINUS  &kp EXCL  &trans
+&trans  &kp TILDE  &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE    &trans  &trans     &kp LT    &kp GT     &kp BSLH  &trans
+                              &trans    &trans    &trans      &trans  &trans     &trans
             >;
         };
 
         nav {
             bindings = <
-&trans  &msc SCRL_UP    &mkp RCLK       &mmv MOVE_UP     &mkp LCLK        &trans    &trans    &trans    &kp HOME  &kp END    &trans  &trans
-&trans  &msc SCRL_DOWN  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN   &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&trans  &trans          &trans          &msc SCRL_LEFT   &msc SCRL_RIGHT  &trans    &trans    &trans    &trans    &trans     &trans  &trans
-                                        &trans           &trans           &trans    &trans    &trans    &trans
+&trans  &msc SCRL_UP    &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc SCRL_RIGHT    &trans    &trans    &kp HOME  &kp END    &trans  &trans
+&trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&trans  &trans          &trans          &trans          &trans           &trans             &trans    &trans    &trans    &trans     &trans  &trans
+                                        &trans          &trans           &trans             &trans    &trans    &trans
             >;
         };
 
